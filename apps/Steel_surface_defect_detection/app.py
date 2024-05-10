@@ -3,7 +3,7 @@ from typing import List
 from fastapi import Form, File, UploadFile
 from io import BytesIO
 import os
-from defect_detection import detect_img
+from .defect_detect import detect_img #.defect_detect 告诉 Python 在当前目录中查找 defect_detect 模块
 app_detection = APIRouter()
 
 @app_detection.post("/file")
