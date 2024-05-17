@@ -6,7 +6,6 @@ from settings import TORTOISE_ORM
 
 app = FastAPI()  # FastAPI()实例化一个app对象
 app.include_router(employee_api, prefix="/employee", tags=["员工系统的员工接口"])  # 注册路由
-
 # 注册tortoise：fastapi一旦运行，register_tortoise已经执行，实现监控
 # 该方法会在fastapi启动时触发，内部通过传递进去的app对象，监听服务启动和终止事件
 # 当检测到启动事件时，会初始化Tortoise对象，如果generate_schemas为True则还会进行数据库迁移
