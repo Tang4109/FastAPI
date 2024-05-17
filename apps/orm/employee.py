@@ -6,7 +6,6 @@ from fastapi.exceptions import HTTPException
 
 from typing import List, Union
 from models import *
-import os
 
 employee_api = APIRouter()
 
