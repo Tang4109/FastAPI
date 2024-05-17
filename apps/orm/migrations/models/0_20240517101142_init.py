@@ -1,6 +1,5 @@
 from tortoise import BaseDBAsyncClient
 
-
 async def upgrade(db: BaseDBAsyncClient) -> str:
     return """
         CREATE TABLE IF NOT EXISTS `clas` (
