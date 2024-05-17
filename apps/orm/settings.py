@@ -1,6 +1,5 @@
 # Description: 配置文件
 TORTOISE_ORM = {
-    #
     'connections': {
         'default': {
             # 'engine': 'tortoise.backends.asyncpg',  PostgreSQL
