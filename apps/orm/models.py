@@ -1,4 +1,4 @@
-# 选课
+# 员工信息
 from tortoise.models import Model
 from tortoise import fields
 
